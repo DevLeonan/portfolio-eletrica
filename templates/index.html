@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fernando Rafael | Alta Performance em Elétrica</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#FDE047', // Amarelo mais elétrico/brilhante
+                        brandDark: '#CA8A04',
+                        dark: '#0B0F19', // Fundo mais denso para destacar o neon
+                        darker: '#05070A'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Efeitos Elétricos CSS - Nível Alto */
+        .neon-pulse {
+            box-shadow: 0 0 10px #CA8A04, 0 0 20px #CA8A04;
+            animation: pulse-energy 2s infinite alternate;
+        }
+
+        @keyframes pulse-energy {
+            0% { box-shadow: 0 0 5px #CA8A04, 0 0 10px #CA8A04; }
+            100% { box-shadow: 0 0 15px #FDE047, 0 0 30px #FDE047, 0 0 45px #FDE047; }
+        }
+
+        /* Borda animada que parece eletricidade correndo */
+        .electric-border {
+            position: relative;
+            overflow: hidden;
+        }
+        .electric-border::before {
+            content: '';
+            position: absolute;
+            top: -50%; left: -50%;
+            width: 200%; height: 200%;
+            background: conic-gradient(transparent, rgba(253, 224, 71, 0.1), transparent 30%);
+            animation: rotate-spark 4s linear infinite;
+        }
+        @keyframes rotate-spark {
+            100% { transform: rotate(1turn); }
+        }
+
+        /* Configuração do Slideshow */
+        .slide {
+            transition: opacity 0.8s ease-in-out;
+            opacity: 0;
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            object-fit: cover;
+        }
+        .slide.active { opacity: 1; }
+    </style>
+</head>
+<body class="bg-dark text-white font-sans antialiased overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 bg-darker/90 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0 font-bold text-2xl tracking-tighter flex items-center gap-2">
+                    <i class="fas fa-bolt text-brand animate-pulse"></i>
+                    Fernando Rafael<span class="text-brand"> - ELÉTRICA PREDIAL</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#servicos" class="hover:text-brand transition-colors">Especialidades</a>
+                        <a href="#portfolio" class="hover:text-brand transition-colors">Portfólio em Ação</a>
+                        <a href="#contato" class="neon-pulse text-darker bg-brand px-6 py-2 rounded-full font-bold hover:bg-yellow-300 transition-all">
+                            Orçamento Expresso
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-32 pb-20 md:pt-48 md:pb-32 px-4 relative">
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-brand to-transparent opacity-50"></div>
+
+        <div class="max-w-7xl mx-auto relative z-10 text-center md:text-left flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2">
+                <div class="inline-block px-4 py-1 rounded-full bg-brand/10 border border-brand/30 text-brand text-sm font-semibold mb-6 flex items-center gap-2 w-max">
+                    <i class="fas fa-plug"></i> Conexão e Segurança
+                </div>
+                <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
+                    A Força que Movimenta <br><span class="text-brand drop-shadow-[0_0_15px_rgba(253,224,71,0.5)]">Sua Obra.</span>
+                </h1>
+                <p class="text-xl text-gray-400 mb-10 max-w-lg">
+                    Alta engenharia e precisão em elétrica predial, montagem de quadros e iluminação avançada.
+                </p>
+                <a href="#contato" class="neon-pulse inline-flex items-center justify-center px-8 py-4 text-lg font-bold rounded-full text-darker bg-brand hover:scale-105 transition-transform">
+                    <i class="fab fa-whatsapp text-2xl mr-2"></i> Solicitar Visita Técnica
+                </a>
+            </div>
+            
+            <div class="md:w-1/2 w-full relative">
+                <div class="aspect-[4/3] rounded-2xl bg-gray-900 overflow-hidden border-2 border-gray-800 relative electric-border shadow-2xl">
+                    <div class="absolute inset-[2px] rounded-[14px] overflow-hidden bg-black z-10" id="hero-slideshow">
+                        <img src="/static/img/img1.jpeg" alt="Trabalho 1" class="slide active">
+                        <img src="/static/img/img2.jpeg" alt="Trabalho 2" class="slide">
+                        <img src="/static/img/img3.jpeg" alt="Trabalho 3" class="slide">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="py-20 bg-darker">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center">Soluções de <span class="text-brand">Alta Voltagem</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-dark p-8 rounded-2xl border border-gray-800 hover:border-brand transition-all hover:-translate-y-2 group">
+                    <i class="fas fa-microchip text-4xl text-brand mb-6 group-hover:scale-110 transition-transform duration-300"></i>
+                    <h3 class="text-xl font-bold mb-4">Quadros de Comando</h3>
+                    <p class="text-gray-400">Montagem de QDC e painéis industriais com organização cirúrgica e dimensionamento preciso.</p>
+                </div>
+                <div class="bg-dark p-8 rounded-2xl border border-gray-800 hover:border-brand transition-all hover:-translate-y-2 group">
+                    <i class="fas fa-lightbulb text-4xl text-brand mb-6 group-hover:scale-110 transition-transform duration-300"></i>
+                    <h3 class="text-xl font-bold mb-4">Luminotécnica</h3>
+                    <p class="text-gray-400">Instalação de perfil de LED, dicroicas, automação e projetos luminotécnicos de luxo.</p>
+                </div>
+                <div class="bg-dark p-8 rounded-2xl border border-gray-800 hover:border-brand transition-all hover:-translate-y-2 group">
+                    <i class="fas fa-project-diagram text-4xl text-brand mb-6 group-hover:scale-110 transition-transform duration-300"></i>
+                    <h3 class="text-xl font-bold mb-4">Cabeamento Estruturado</h3>
+                    <p class="text-gray-400">Infraestrutura limpa, eletrocalhas e passagem de cabos sem gargalos ou interferências.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-24 bg-dark relative">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-center gap-4 mb-16">
+                <div class="h-[1px] w-16 bg-brand"></div>
+                <h2 class="text-3xl md:text-5xl font-bold text-center">Meu Portfólio <span class="text-brand">em Ação</span></h2>
+                <div class="h-[1px] w-16 bg-brand"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="rounded-xl overflow-hidden border border-gray-800 bg-black relative group">
+                    <div class="absolute inset-0 bg-brand/20 opacity-0 group-hover:opacity-100 transition-opacity z-10 pointer-events-none mix-blend-overlay"></div>
+                    <video src="/static/img/v3.mp4" autoplay loop muted playsinline class="w-full h-80 object-cover"></video>
+                    <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black to-transparent z-20">
+                        <p class="font-bold">Infraestrutura Predial</p>
+                    </div>
+                </div>
+
+                <div class="rounded-xl overflow-hidden border border-gray-800 bg-black relative group">
+                    <video src="/static/img/v4.mp4" autoplay loop muted playsinline class="w-full h-80 object-cover"></video>
+                    <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black to-transparent z-20">
+                        <p class="font-bold">Montagem QDC</p>
+                    </div>
+                </div>
+
+                <div class="rounded-xl overflow-hidden border border-gray-800 bg-black relative group">
+                    <video src="/static/img/v5.mp4" autoplay loop muted playsinline class="w-full h-80 object-cover"></video>
+                    <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black to-transparent z-20">
+                        <p class="font-bold">Perfil de LED - Finalizado, PLANETA ATLANTIDA 2025</p>
+                    </div>
+                </div>
+				
+						
+				<div class="rounded-xl overflow-hidden border border-gray-800 bg-black relative group">
+                    <video src="/static/img/v8.mp4" autoplay loop muted playsinline class="w-full h-80 object-cover"></video>
+                    <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black to-transparent z-20">
+                        <h4 class="font-bold">Correção de Barramento</h4>
+                    </div>
+                </div>
+				
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-24 relative bg-darker overflow-hidden">
+        <div class="absolute inset-0 opacity-5 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-brand via-dark to-darker"></div>
+        
+        <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+            <i class="fas fa-bolt text-6xl text-brand mb-6 animate-pulse"></i>
+            <h2 class="text-4xl md:text-5xl font-bold mb-8">Vamos dar um <span class="text-brand">Choque de Qualidade</span> no seu projeto?</h2>
+            <p class="text-xl text-gray-400 mb-10">Converse direto comigo agora. Sem intermediários, apenas soluções técnicas diretas.</p>
+            <a href="https://wa.me/555199216089" target="_blank" class="neon-pulse inline-flex items-center justify-center px-10 py-5 text-xl font-bold rounded-full text-darker bg-brand hover:scale-105 transition-all">
+                <i class="fab fa-whatsapp text-3xl mr-3"></i> Falar com o Fernando Agora
+            </a>
+        </div>
+    </section>
+
+    <footer class="bg-black py-8 text-center text-gray-600">
+        <p>&copy;Desenvolvido por devLeonan 2026 // Fernando Rafael Elétrica. Todos os direitos reservados.  </p>
+    </footer>
+
+    <script>
+        // Lógica do Slideshow (Troca a cada 2 segundos para dar tempo de ver a foto)
+        // Se quiser mais rápido, mude o 2000 para 1000 (1 segundo).
+        document.addEventListener('DOMContentLoaded', () => {
+            const slides = document.querySelectorAll('#hero-slideshow .slide');
+            let currentSlide = 0;
+
+            if(slides.length > 0) {
+                setInterval(() => {
+                    slides[currentSlide].classList.remove('active');
+                    currentSlide = (currentSlide + 1) % slides.length;
+                    slides[currentSlide].classList.add('active');
+                }, 2000); // 2000 milissegundos = 2 segundos
+            }
+        });
+    </script>
+</body>
+</html>
