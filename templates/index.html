@@ -65,13 +65,14 @@
 </head>
 <body class="bg-dark text-white font-sans antialiased overflow-x-hidden">
 
-    <nav class="fixed w-full z-50 bg-darker/90 backdrop-blur-md border-b border-gray-800">
+    <nav class="fixed w-full z-50 bg-darker/95 backdrop-blur-md border-b border-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
-                <div class="flex-shrink-0 font-bold text-2xl tracking-tighter flex items-center gap-2">
+                <div class="flex-shrink-0 font-bold text-xl md:text-2xl tracking-tighter flex items-center gap-2">
                     <i class="fas fa-bolt text-brand animate-pulse"></i>
-                    Fernando Rafael<span class="text-brand"> - ELÉTRICA PREDIAL</span>
+                    Fernando Rafael<span class="text-brand hidden sm:inline"> - ELÉTRICA PREDIAL</span>
                 </div>
+                
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-8">
                         <a href="#servicos" class="hover:text-brand transition-colors">Especialidades</a>
@@ -82,31 +83,46 @@
                         </a>
                     </div>
                 </div>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-white hover:text-brand focus:outline-none transition-colors">
+                        <i class="fas fa-bars text-3xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-darker border-b border-gray-800 absolute w-full transition-all duration-300 ease-in-out">
+            <div class="px-4 pt-2 pb-6 space-y-4 flex flex-col text-center shadow-2xl shadow-black">
+                <a href="#servicos" class="mobile-link block text-lg hover:text-brand transition-colors py-2">Especialidades</a>
+                <a href="#portfolio" class="mobile-link block text-lg hover:text-brand transition-colors py-2">Portfólio em Ação</a>
+                <a href="#equipamentos" class="mobile-link block text-lg hover:text-brand transition-colors py-2">Equipamentos</a>
+                <a href="#contato" class="mobile-link block text-lg text-darker bg-brand font-bold py-3 rounded-full mt-4">Orçamento Expresso</a>
             </div>
         </div>
     </nav>
 
-    <section class="pt-32 pb-20 md:pt-48 md:pb-32 px-4 relative">
+    <section class="pt-28 pb-16 md:pt-48 md:pb-32 px-4 relative">
         <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-brand to-transparent opacity-50"></div>
 
         <div class="max-w-7xl mx-auto relative z-10 text-center md:text-left flex flex-col md:flex-row items-center gap-12">
-            <div class="md:w-1/2">
-                <div class="inline-block px-4 py-1 rounded-full bg-brand/10 border border-brand/30 text-brand text-sm font-semibold mb-6 flex items-center gap-2 w-max">
+            <div class="md:w-1/2 w-full mt-4 md:mt-0 order-2 md:order-1">
+                <div class="inline-block px-4 py-1 rounded-full bg-brand/10 border border-brand/30 text-brand text-xs md:text-sm font-semibold mb-6 flex items-center gap-2 w-max mx-auto md:mx-0">
                     <i class="fas fa-plug"></i> Conexão e Segurança
                 </div>
-                <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
+                <h1 class="text-4xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
                     A Força que Movimenta <br><span class="text-brand drop-shadow-[0_0_15px_rgba(253,224,71,0.5)]">Sua Obra.</span>
                 </h1>
-                <p class="text-xl text-gray-400 mb-10 max-w-lg">
+                <p class="text-lg md:text-xl text-gray-400 mb-10 max-w-lg mx-auto md:mx-0">
                     Alta engenharia e precisão em elétrica predial, montagem de quadros e iluminação avançada.
                 </p>
-                <a href="#contato" class="neon-pulse inline-flex items-center justify-center px-8 py-4 text-lg font-bold rounded-full text-darker bg-brand hover:scale-105 transition-transform">
+                <a href="#contato" class="neon-pulse w-full md:w-auto inline-flex items-center justify-center px-8 py-4 text-lg font-bold rounded-full text-darker bg-brand hover:scale-105 transition-transform">
                     <i class="fab fa-whatsapp text-2xl mr-2"></i> Solicitar Visita Técnica
                 </a>
             </div>
             
-            <div class="md:w-1/2 w-full relative">
-                <div class="aspect-[4/3] rounded-2xl bg-gray-900 overflow-hidden border-2 border-gray-800 relative electric-border shadow-2xl">
+            <div class="md:w-1/2 w-full relative order-1 md:order-2">
+                <div class="aspect-[4/3] w-full max-w-md mx-auto md:max-w-full rounded-2xl bg-gray-900 overflow-hidden border-2 border-gray-800 relative electric-border shadow-2xl">
                     <div class="absolute inset-[2px] rounded-[14px] overflow-hidden bg-black z-10" id="hero-slideshow">
                         <img src="/static/img/img0.jpeg" alt="Trabalho 1" class="slide active">
                         <img src="/static/img/img1.jpeg" alt="Trabalho 2" class="slide">
@@ -119,22 +135,22 @@
         </div>
     </section>
 
-    <section id="servicos" class="py-20 bg-darker">
-        <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center">Soluções de <span class="text-brand">Alta Voltagem</span></h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <section id="servicos" class="py-16 md:py-24 bg-darker">
+        <div class="max-w-7xl mx-auto px-4 text-center md:text-left">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 md:mb-16 text-center">Soluções de <span class="text-brand">Alta Voltagem</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
                 <div class="bg-dark p-8 rounded-2xl border border-gray-800 hover:border-brand transition-all hover:-translate-y-2 group">
-                    <i class="fas fa-microchip text-4xl text-brand mb-6 group-hover:scale-110 transition-transform duration-300"></i>
+                    <i class="fas fa-microchip text-4xl text-brand mb-6 group-hover:scale-110 transition-transform duration-300 flex justify-center md:justify-start"></i>
                     <h3 class="text-xl font-bold mb-4">Quadros de Comando</h3>
                     <p class="text-gray-400">Montagem de QDC e painéis industriais com organização cirúrgica e dimensionamento preciso.</p>
                 </div>
                 <div class="bg-dark p-8 rounded-2xl border border-gray-800 hover:border-brand transition-all hover:-translate-y-2 group">
-                    <i class="fas fa-lightbulb text-4xl text-brand mb-6 group-hover:scale-110 transition-transform duration-300"></i>
+                    <i class="fas fa-lightbulb text-4xl text-brand mb-6 group-hover:scale-110 transition-transform duration-300 flex justify-center md:justify-start"></i>
                     <h3 class="text-xl font-bold mb-4">Luminotécnica</h3>
                     <p class="text-gray-400">Instalação de perfil de LED, dicroicas, automação e projetos luminotécnicos de luxo.</p>
                 </div>
                 <div class="bg-dark p-8 rounded-2xl border border-gray-800 hover:border-brand transition-all hover:-translate-y-2 group">
-                    <i class="fas fa-project-diagram text-4xl text-brand mb-6 group-hover:scale-110 transition-transform duration-300"></i>
+                    <i class="fas fa-project-diagram text-4xl text-brand mb-6 group-hover:scale-110 transition-transform duration-300 flex justify-center md:justify-start"></i>
                     <h3 class="text-xl font-bold mb-4">Cabeamento Estruturado</h3>
                     <p class="text-gray-400">Infraestrutura limpa, eletrocalhas e passagem de cabos sem gargalos ou interferências.</p>
                 </div>
@@ -142,135 +158,133 @@
         </div>
     </section>
 
-    <section id="portfolio" class="py-24 bg-dark relative">
+    <section id="portfolio" class="py-16 md:py-24 bg-dark relative">
         <div class="max-w-7xl mx-auto px-4">
-            <div class="flex items-center justify-center gap-4 mb-16">
-                <div class="h-[1px] w-16 bg-brand"></div>
+            <div class="flex items-center justify-center gap-4 mb-12 md:mb-16">
+                <div class="h-[1px] w-8 md:w-16 bg-brand"></div>
                 <h2 class="text-3xl md:text-5xl font-bold text-center">Meu Portfólio <span class="text-brand">em Ação</span></h2>
-                <div class="h-[1px] w-16 bg-brand"></div>
+                <div class="h-[1px] w-8 md:w-16 bg-brand"></div>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div class="rounded-xl overflow-hidden border border-gray-800 bg-black relative group">
-                    <div class="absolute inset-0 bg-brand/20 opacity-0 group-hover:opacity-100 transition-opacity z-10 pointer-events-none mix-blend-overlay"></div>
-                    <video src="/static/img/v3.mp4" autoplay loop muted playsinline class="w-full h-80 object-cover"></video>
+                    <video src="/static/img/v3.mp4" autoplay loop muted playsinline class="w-full h-64 md:h-80 object-cover"></video>
                     <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black to-transparent z-20">
                         <p class="font-bold">Infraestrutura Predial</p>
                     </div>
                 </div>
 
                 <div class="rounded-xl overflow-hidden border border-gray-800 bg-black relative group">
-                    <video src="/static/img/v4.mp4" autoplay loop muted playsinline class="w-full h-80 object-cover"></video>
+                    <video src="/static/img/v4.mp4" autoplay loop muted playsinline class="w-full h-64 md:h-80 object-cover"></video>
                     <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black to-transparent z-20">
                         <p class="font-bold">Montagem QDC</p>
                     </div>
                 </div>
 
                 <div class="rounded-xl overflow-hidden border border-gray-800 bg-black relative group">
-                    <video src="/static/img/v5.mp4" autoplay loop muted playsinline class="w-full h-80 object-cover"></video>
+                    <video src="/static/img/v5.mp4" autoplay loop muted playsinline class="w-full h-64 md:h-80 object-cover"></video>
                     <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black to-transparent z-20">
-                        <p class="font-bold">Perfil de LED - Finalizado, PLANETA ATLANTIDA 2025</p>
+                        <p class="font-bold text-sm md:text-base">Perfil de LED - PLANETA ATLÂNTIDA 2025</p>
                     </div>
                 </div>
                 
                 <div class="rounded-xl overflow-hidden border border-gray-800 bg-black relative group">
-                    <video src="/static/img/v8.mp4" autoplay loop muted playsinline class="w-full h-80 object-cover"></video>
+                    <video src="/static/img/v8.mp4" autoplay loop muted playsinline class="w-full h-64 md:h-80 object-cover"></video>
                     <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black to-transparent z-20">
                         <h4 class="font-bold">Correção de Barramento</h4>
                     </div>
                 </div>
                 
                 <div class="rounded-xl overflow-hidden border border-gray-800 bg-black relative group">
-                    <video src="/static/img/v9.mp4" autoplay loop muted playsinline class="w-full h-80 object-cover"></video>
+                    <video src="/static/img/v9.mp4" autoplay loop muted playsinline class="w-full h-64 md:h-80 object-cover"></video>
                     <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black to-transparent z-20">
                         <h4 class="font-bold">Elétrica de QUALIDADE</h4>
                     </div>
                 </div>
                 
                 <div class="rounded-xl overflow-hidden border border-gray-800 bg-black relative group">
-                    <video src="/static/img/v10.mp4" autoplay loop muted playsinline class="w-full h-80 object-cover"></video>
+                    <video src="/static/img/v10.mp4" autoplay loop muted playsinline class="w-full h-64 md:h-80 object-cover"></video>
                     <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black to-transparent z-20">
-                        <h4 class="font-bold">Quadra de volei finalizada</h4>
+                        <h4 class="font-bold">Quadra de vôlei finalizada</h4>
                     </div>
                 </div>
-				
-				<div class="rounded-xl overflow-hidden border border-gray-800 bg-black relative group">
-                    <video src="/static/img/v11.mp4" autoplay loop muted playsinline class="w-full h-80 object-cover"></video>
-                    <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black to-transparent z-20">
-                        <h4 class="font-bold">Ligação da tomada</h4>
+
+                <div class="rounded-xl overflow-hidden border border-gray-800 bg-black relative group">
+                    <video src="/static/img/v11.mp4" autoplay loop muted playsinline class="w-full h-64 md:h-80 object-cover"></video>
+                    <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black via-black/80 to-transparent z-20">
+                        <h4 class="font-bold text-brand">Rigor Técnico</h4>
+                        <p class="text-xs text-gray-300">Ligação de tomadas segundo normas de segurança.</p>
                     </div>
                 </div>
-				
-				<div class="rounded-xl overflow-hidden border border-gray-800 bg-black relative group">
-                    <video src="/static/img/v12.mp4" autoplay loop muted playsinline class="w-full h-80 object-cover"></video>
-                    <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black to-transparent z-20">
-                        <h4 class="font-bold">Infraestrutura acima do teto falso</h4>
+                
+                <div class="rounded-xl overflow-hidden border border-gray-800 bg-black relative group">
+                    <video src="/static/img/v12.mp4" autoplay loop muted playsinline class="w-full h-64 md:h-80 object-cover"></video>
+                    <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black via-black/80 to-transparent z-20">
+                        <h4 class="font-bold text-brand">Infra Estruturada</h4>
+                        <p class="text-xs text-gray-300">Cablagem invisível e organizada em teto falso.</p>
                     </div>
                 </div>
-				
-				<div class="rounded-xl overflow-hidden border border-gray-800 bg-black relative group">
-                    <video src="/static/img/v13.mp4" autoplay loop muted playsinline class="w-full h-80 object-cover"></video>
-                    <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black to-transparent z-20">
-                        <h4 class="font-bold">Teste dos focos de luz/spots</h4>
+                
+                <div class="rounded-xl overflow-hidden border border-gray-800 bg-black relative group">
+                    <video src="/static/img/v13.mp4" autoplay loop muted playsinline class="w-full h-64 md:h-80 object-cover"></video>
+                    <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black via-black/80 to-transparent z-20">
+                        <h4 class="font-bold text-brand">Luminotécnica</h4>
+                        <p class="text-xs text-gray-300">Teste de focos embutidos para design impecável.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="equipamentos" class="py-24 bg-darker border-t border-b border-gray-900 relative">
+    <section id="equipamentos" class="py-16 md:py-24 bg-darker border-t border-b border-gray-900 relative">
         <div class="absolute inset-0 bg-black/40"></div>
         
         <div class="max-w-7xl mx-auto px-4 relative z-10">
-            <div class="flex flex-col items-center justify-center mb-16 text-center">
-                <div class="inline-block px-4 py-1 rounded-full bg-gray-800 border border-gray-700 text-gray-300 text-sm font-semibold mb-6 flex items-center gap-2">
+            <div class="flex flex-col items-center justify-center mb-12 md:mb-16 text-center">
+                <div class="inline-block px-4 py-1 rounded-full bg-gray-800 border border-gray-700 text-gray-300 text-xs md:text-sm font-semibold mb-6 flex items-center gap-2">
                     <i class="fas fa-toolbox text-brand"></i> Ferramental de Ponta
                 </div>
                 <h2 class="text-3xl md:text-5xl font-bold">Meus <span class="text-brand">Equipamentos</span></h2>
-                <p class="text-gray-400 mt-6 max-w-2xl text-lg">
+                <p class="text-sm md:text-lg text-gray-400 mt-6 max-w-2xl px-2">
                     Um serviço de alta performance exige ferramentas de precisão. Conheça a estrutura que garante segurança e acabamento impecável em cada obra.
                 </p>
             </div>
 
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-6">
                 <div class="aspect-square rounded-xl overflow-hidden border border-gray-800 bg-black relative group shadow-lg">
-                    <div class="absolute inset-0 bg-brand/20 opacity-0 group-hover:opacity-100 transition-opacity z-10 pointer-events-none mix-blend-overlay"></div>
                     <img src="/static/img/img5.jpeg" alt="Equipamento 1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                 </div>
                 
                 <div class="aspect-square rounded-xl overflow-hidden border border-gray-800 bg-black relative group shadow-lg">
-                    <div class="absolute inset-0 bg-brand/20 opacity-0 group-hover:opacity-100 transition-opacity z-10 pointer-events-none mix-blend-overlay"></div>
                     <img src="/static/img/img6.jpeg" alt="Equipamento 2" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                 </div>
 
                 <div class="aspect-square rounded-xl overflow-hidden border border-gray-800 bg-black relative group shadow-lg">
-                    <div class="absolute inset-0 bg-brand/20 opacity-0 group-hover:opacity-100 transition-opacity z-10 pointer-events-none mix-blend-overlay"></div>
                     <img src="/static/img/img7.jpeg" alt="Equipamento 3" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                 </div>
-
             </div>
         </div>
     </section>
 
-    <section id="contato" class="py-24 relative bg-dark overflow-hidden">
+    <section id="contato" class="py-16 md:py-24 relative bg-dark overflow-hidden">
         <div class="absolute inset-0 opacity-5 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-brand via-dark to-darker"></div>
         
         <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
-            <i class="fas fa-bolt text-6xl text-brand mb-6 animate-pulse"></i>
-            <h2 class="text-4xl md:text-5xl font-bold mb-8">Vamos dar um <span class="text-brand">Choque de Qualidade</span> no seu projeto?</h2>
-            <p class="text-xl text-gray-400 mb-10">Converse direto comigo agora. Sem intermediários, apenas soluções técnicas diretas.</p>
-            <a href="https://wa.me/555199216089" target="_blank" class="neon-pulse inline-flex items-center justify-center px-10 py-5 text-xl font-bold rounded-full text-darker bg-brand hover:scale-105 transition-all">
-                <i class="fab fa-whatsapp text-3xl mr-3"></i> Falar com o Fernando Agora
+            <i class="fas fa-bolt text-5xl md:text-6xl text-brand mb-6 animate-pulse"></i>
+            <h2 class="text-3xl md:text-5xl font-bold mb-6 md:mb-8 leading-tight">Vamos dar um <br class="md:hidden"><span class="text-brand">Choque de Qualidade</span> no seu projeto?</h2>
+            <p class="text-lg md:text-xl text-gray-400 mb-8 md:mb-10 px-4">Converse direto comigo agora. Sem intermediários, apenas soluções técnicas diretas.</p>
+            <a href="https://wa.me/555199216089" target="_blank" class="neon-pulse w-full md:w-auto inline-flex items-center justify-center px-8 md:px-10 py-4 md:py-5 text-lg md:text-xl font-bold rounded-full text-darker bg-brand hover:scale-105 transition-all">
+                <i class="fab fa-whatsapp text-2xl md:text-3xl mr-3"></i> Falar com Fernando Agora
             </a>
         </div>
     </section>
 
-    <footer class="bg-black py-8 text-center text-gray-600">
-        <p>&copy;Desenvolvido por devLeonan 2026 // Fernando Rafael Elétrica. Todos os direitos reservados.  </p>
+    <footer class="bg-black py-8 px-4 text-center text-sm text-gray-600 border-t border-gray-900">
+        <p>&copy; Desenvolvido por devLeonan 2026 // Fernando Rafael Elétrica. Todos os direitos reservados.</p>
     </footer>
 
     <script>
-        // Lógica do Slideshow (Troca a cada 2 segundos para dar tempo de ver a foto)
+        // Lógica do Slideshow (Troca a cada 2 segundos)
         document.addEventListener('DOMContentLoaded', () => {
             const slides = document.querySelectorAll('#hero-slideshow .slide');
             let currentSlide = 0;
@@ -280,8 +294,35 @@
                     slides[currentSlide].classList.remove('active');
                     currentSlide = (currentSlide + 1) % slides.length;
                     slides[currentSlide].classList.add('active');
-                }, 2000); // 2000 milissegundos = 2 segundos
+                }, 2000); 
             }
+
+            // Lógica do Menu Mobile
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            const icon = btn.querySelector('i');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+
+            // Abrir/Fechar ao clicar no ícone do menu
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+                if (menu.classList.contains('hidden')) {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                } else {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                }
+            });
+
+            // Fechar menu automaticamente ao clicar num link (no telemóvel)
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    menu.classList.add('hidden');
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                });
+            });
         });
     </script>
 </body>
