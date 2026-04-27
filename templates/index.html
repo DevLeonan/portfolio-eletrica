@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fernando Rafael | Alta Performance em Elétrica</title>
+    <title>Fernando Rafael | Currículo e Portfólio Elétrico</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     
@@ -12,9 +12,9 @@
             theme: {
                 extend: {
                     colors: {
-                        brand: '#FDE047', // Amarelo mais elétrico/brilhante
+                        brand: '#FDE047', 
                         brandDark: '#CA8A04',
-                        dark: '#0B0F19', // Fundo mais denso para destacar o neon
+                        dark: '#0B0F19', 
                         darker: '#05070A'
                     }
                 }
@@ -23,7 +23,6 @@
     </script>
 
     <style>
-        /* Efeitos Elétricos CSS - Nível Alto */
         .neon-pulse {
             box-shadow: 0 0 10px #CA8A04, 0 0 20px #CA8A04;
             animation: pulse-energy 2s infinite alternate;
@@ -34,7 +33,6 @@
             100% { box-shadow: 0 0 15px #FDE047, 0 0 30px #FDE047, 0 0 45px #FDE047; }
         }
 
-        /* Borda animada que parece eletricidade correndo */
         .electric-border {
             position: relative;
             overflow: hidden;
@@ -51,7 +49,6 @@
             100% { transform: rotate(1turn); }
         }
 
-        /* Configuração do Slideshow */
         .slide {
             transition: opacity 0.8s ease-in-out;
             opacity: 0;
@@ -75,11 +72,11 @@
                 
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="#servicos" class="hover:text-brand transition-colors">Especialidades</a>
-                        <a href="#portfolio" class="hover:text-brand transition-colors">Portfólio em Ação</a>
+                        <a href="#curriculo" class="hover:text-brand transition-colors">Currículo</a>
+                        <a href="#portfolio" class="hover:text-brand transition-colors">Portfólio</a>
                         <a href="#equipamentos" class="hover:text-brand transition-colors">Equipamentos</a>
-                        <a href="#contato" class="neon-pulse text-darker bg-brand px-6 py-2 rounded-full font-bold hover:bg-yellow-300 transition-all">
-                            Orçamento Expresso
+                        <a href="#contato" class="text-brand border border-brand px-5 py-2 rounded-full font-bold hover:bg-brand hover:text-darker transition-all">
+                            Contato
                         </a>
                     </div>
                 </div>
@@ -94,32 +91,37 @@
 
         <div id="mobile-menu" class="hidden md:hidden bg-darker border-b border-gray-800 absolute w-full transition-all duration-300 ease-in-out">
             <div class="px-4 pt-2 pb-6 space-y-4 flex flex-col text-center shadow-2xl shadow-black">
-                <a href="#servicos" class="mobile-link block text-lg hover:text-brand transition-colors py-2">Especialidades</a>
-                <a href="#portfolio" class="mobile-link block text-lg hover:text-brand transition-colors py-2">Portfólio em Ação</a>
+                <a href="#curriculo" class="mobile-link block text-lg hover:text-brand transition-colors py-2">Currículo</a>
+                <a href="#portfolio" class="mobile-link block text-lg hover:text-brand transition-colors py-2">Portfólio</a>
                 <a href="#equipamentos" class="mobile-link block text-lg hover:text-brand transition-colors py-2">Equipamentos</a>
-                <a href="#contato" class="mobile-link block text-lg text-darker bg-brand font-bold py-3 rounded-full mt-4">Orçamento Expresso</a>
+                <a href="#contato" class="mobile-link block text-lg text-darker bg-brand font-bold py-3 rounded-full mt-4">Contato</a>
             </div>
         </div>
     </nav>
 
     <section class="pt-28 pb-16 md:pt-48 md:pb-32 px-4 relative">
         <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-brand to-transparent opacity-50"></div>
-		<canvas id="circuit-board" class="absolute inset-0 w-full h-full z-0 opacity-40"></canvas>
+        <canvas id="circuit-board" class="absolute inset-0 w-full h-full z-0 opacity-40"></canvas>
 
         <div class="max-w-7xl mx-auto relative z-10 text-center md:text-left flex flex-col md:flex-row items-center gap-12">
             <div class="md:w-1/2 w-full mt-4 md:mt-0 order-2 md:order-1">
                 <div class="inline-block px-4 py-1 rounded-full bg-brand/10 border border-brand/30 text-brand text-xs md:text-sm font-semibold mb-6 flex items-center gap-2 w-max mx-auto md:mx-0">
-                    <i class="fas fa-plug"></i> Conexão e Segurança
+                    <i class="fas fa-id-badge"></i> Profissional Qualificado
                 </div>
-                <h1 class="text-4xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
-                    A Força que Movimenta <br><span class="text-brand drop-shadow-[0_0_15px_rgba(253,224,71,0.5)]">Sua Obra.</span>
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
+                    Experiência Técnica para <br><span class="text-brand drop-shadow-[0_0_15px_rgba(253,224,71,0.5)]">Projetos Exigentes.</span>
                 </h1>
                 <p class="text-lg md:text-xl text-gray-400 mb-10 max-w-lg mx-auto md:mx-0">
-                    Alta engenharia e precisão em elétrica predial, montagem de quadros e iluminação avançada.
+                    Vasta experiência como eletricista autônomo, com múltiplas certificações SENAI. Especialista em instalações residenciais, prediais e alto padrão.
                 </p>
-                <a href="#contato" class="neon-pulse w-full md:w-auto inline-flex items-center justify-center px-8 py-4 text-lg font-bold rounded-full text-darker bg-brand hover:scale-105 transition-transform">
-                    <i class="fab fa-whatsapp text-2xl mr-2"></i> Solicitar Visita Técnica
-                </a>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#curriculo" class="neon-pulse inline-flex items-center justify-center px-8 py-4 text-lg font-bold rounded-full text-darker bg-brand hover:scale-105 transition-transform">
+                        <i class="fas fa-file-alt text-2xl mr-2"></i> Ver Currículo
+                    </a>
+                    <a href="#portfolio" class="inline-flex items-center justify-center px-8 py-4 text-lg font-bold rounded-full text-brand border border-brand hover:bg-brand/10 transition-transform">
+                        Ver Portfólio
+                    </a>
+                </div>
             </div>
             
             <div class="md:w-1/2 w-full relative order-1 md:order-2">
@@ -128,32 +130,70 @@
                         <img src="/static/img/img0.jpeg" alt="Trabalho 1" class="slide active">
                         <img src="/static/img/img1.jpeg" alt="Trabalho 2" class="slide">
                         <img src="/static/img/img2.jpeg" alt="Trabalho 3" class="slide">
-                        <img src="/static/img/img3.jpeg" alt="Trabalho 4" class="slide">
-                        <img src="/static/img/img4.jpeg" alt="Trabalho 5" class="slide">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="servicos" class="py-16 md:py-24 bg-darker">
-        <div class="max-w-7xl mx-auto px-4 text-center md:text-left">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12 md:mb-16 text-center">Soluções de <span class="text-brand">Alta Voltagem</span></h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-                <div class="bg-dark p-8 rounded-2xl border border-gray-800 hover:border-brand transition-all hover:-translate-y-2 group">
-                    <i class="fas fa-microchip text-4xl text-brand mb-6 group-hover:scale-110 transition-transform duration-300 flex justify-center md:justify-start"></i>
-                    <h3 class="text-xl font-bold mb-4">Quadros de Comando</h3>
-                    <p class="text-gray-400">Montagem de QDC e painéis industriais com organização cirúrgica e dimensionamento preciso.</p>
+    <section id="curriculo" class="py-16 md:py-24 bg-darker relative border-t border-gray-800">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="flex items-center justify-center gap-4 mb-16">
+                <div class="h-[1px] w-8 md:w-16 bg-brand"></div>
+                <h2 class="text-3xl md:text-4xl font-bold text-center">Trajetória <span class="text-brand">Profissional</span></h2>
+                <div class="h-[1px] w-8 md:w-16 bg-brand"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-8 flex items-center gap-3 text-white">
+                        <i class="fas fa-briefcase text-brand"></i> Experiência Prática
+                    </h3>
+                    <div class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-gray-700 before:to-transparent">
+                        
+                        <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                            <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-darker bg-brand text-darker font-bold shadow-[0_0_10px_rgba(253,224,71,0.5)] shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 rounded-xl bg-dark border border-gray-800 hover:border-brand/50 transition-colors">
+                                <h4 class="font-bold text-xl mb-1 text-white">Eletricista Profissional Autônomo</h4>
+                                <span class="text-brand text-sm font-semibold block mb-3">Vasta Experiência • Atual</span>
+                                <p class="text-gray-400 text-sm leading-relaxed">
+                                    Execução direta de projetos elétricos do zero ao acabamento. Especialista em infraestrutura predial, residencial e imóveis de alto padrão. Diagnóstico, reparo, montagem de QDC e projetos de luminotécnica complexos.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="bg-dark p-8 rounded-2xl border border-gray-800 hover:border-brand transition-all hover:-translate-y-2 group">
-                    <i class="fas fa-lightbulb text-4xl text-brand mb-6 group-hover:scale-110 transition-transform duration-300 flex justify-center md:justify-start"></i>
-                    <h3 class="text-xl font-bold mb-4">Luminotécnica</h3>
-                    <p class="text-gray-400">Instalação de perfil de LED, dicroicas, automação e projetos luminotécnicos de luxo.</p>
-                </div>
-                <div class="bg-dark p-8 rounded-2xl border border-gray-800 hover:border-brand transition-all hover:-translate-y-2 group">
-                    <i class="fas fa-project-diagram text-4xl text-brand mb-6 group-hover:scale-110 transition-transform duration-300 flex justify-center md:justify-start"></i>
-                    <h3 class="text-xl font-bold mb-4">Cabeamento Estruturado</h3>
-                    <p class="text-gray-400">Infraestrutura limpa, eletrocalhas e passagem de cabos sem gargalos ou interferências.</p>
+
+                <div>
+                    <h3 class="text-2xl font-bold mb-8 flex items-center gap-3 text-white">
+                        <i class="fas fa-graduation-cap text-brand"></i> Formação Acadêmica
+                    </h3>
+                    <div class="space-y-6">
+                        
+                        <div class="p-6 rounded-xl bg-dark border border-gray-800 relative overflow-hidden group hover:border-brand/50 transition-colors">
+                            <div class="absolute top-0 right-0 w-16 h-16 bg-brand/10 rounded-bl-full flex items-start justify-end p-3">
+                                <i class="fas fa-certificate text-brand"></i>
+                            </div>
+                            <h4 class="font-bold text-xl mb-1 text-white">Cursos Técnicos e Especializações</h4>
+                            <span class="text-brand text-sm font-semibold block mb-3">SENAI</span>
+                            <p class="text-gray-400 text-sm mb-4">Aproximadamente 10 certificações técnicas voltadas para excelência em serviços elétricos, incluindo:</p>
+                            <ul class="text-sm text-gray-300 space-y-2">
+                                <li class="flex items-center gap-2"><i class="fas fa-check-circle text-brand text-xs"></i> Elétrica Básica</li>
+                                <li class="flex items-center gap-2"><i class="fas fa-check-circle text-brand text-xs"></i> Instalação e Manutenção Elétrica</li>
+                                <li class="flex items-center gap-2"><i class="fas fa-check-circle text-brand text-xs"></i> Elétrica Predial</li>
+                                <li class="flex items-center gap-2"><i class="fas fa-check-circle text-brand text-xs"></i> Elétrica Residencial</li>
+                            </ul>
+                        </div>
+
+                        <div class="p-6 rounded-xl bg-dark border border-gray-800 hover:border-brand/50 transition-colors">
+                            <h4 class="font-bold text-xl mb-1 text-white">Ensino Médio Completo</h4>
+                            <span class="text-brand text-sm font-semibold block mb-3">Colégio Unificado</span>
+                            <p class="text-gray-400 text-sm">Formação base concluída com sucesso.</p>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -163,55 +203,70 @@
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex items-center justify-center gap-4 mb-12 md:mb-16">
                 <div class="h-[1px] w-8 md:w-16 bg-brand"></div>
-                <h2 class="text-3xl md:text-5xl font-bold text-center">Meu Portfólio <span class="text-brand">em Ação</span></h2>
+                <h2 class="text-3xl md:text-5xl font-bold text-center">Portfólio <span class="text-brand">de Projetos</span></h2>
                 <div class="h-[1px] w-8 md:w-16 bg-brand"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div class="rounded-xl overflow-hidden border border-brand/50 bg-black relative group shadow-[0_0_15px_rgba(253,224,71,0.15)]">
+                    <img src="/static/img/casa_alto_padrao1.jpeg" alt="Residência de Alto Padrão" class="w-full h-64 md:h-80 object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black via-black/90 to-transparent z-20">
+                        <div class="inline-block px-2 py-1 bg-brand text-darker text-xs font-bold rounded mb-2 uppercase tracking-wider">Alto Padrão</div>
+                        <h4 class="font-bold text-lg">Instalação Residencial Premium</h4>
+                        <p class="text-sm text-gray-300">Acabamento refinado e infraestrutura dimensionada para cargas elevadas.</p>
+                    </div>
+                </div>
+                
+                <div class="rounded-xl overflow-hidden border border-brand/50 bg-black relative group shadow-[0_0_15px_rgba(253,224,71,0.15)]">
+                    <img src="/static/img/casa_alto_padrao2.jpeg" alt="Luminotécnica Alto Padrão" class="w-full h-64 md:h-80 object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black via-black/90 to-transparent z-20">
+                        <div class="inline-block px-2 py-1 bg-brand text-darker text-xs font-bold rounded mb-2 uppercase tracking-wider">Alto Padrão</div>
+                        <h4 class="font-bold text-lg">Luminotécnica Avançada</h4>
+                        <p class="text-sm text-gray-300">Projeto de iluminação sob medida para valorização de ambientes de luxo.</p>
+                    </div>
+                </div>
+				<div class="rounded-xl overflow-hidden border border-brand/50 bg-black relative group shadow-[0_0_15px_rgba(253,224,71,0.15)]">
+                    <img src="/static/img/casa_alto_padrao3.jpeg" alt="Luminotécnica Alto Padrão" class="w-full h-64 md:h-80 object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black via-black/90 to-transparent z-20">
+                        <div class="inline-block px-2 py-1 bg-brand text-darker text-xs font-bold rounded mb-2 uppercase tracking-wider">Alto Padrão</div>
+                        <h4 class="font-bold text-lg">Luminotécnica Avançada</h4>
+                        <p class="text-sm text-gray-300">Projeto de iluminação sob medida para valorização de ambientes de luxo.</p>
+                    </div>
+					<div class="rounded-xl overflow-hidden border border-brand/50 bg-black relative group shadow-[0_0_15px_rgba(253,224,71,0.15)]">
+                    <img src="/static/img/casa_alto_padrao4.jpeg" alt="Luminotécnica Alto Padrão" class="w-full h-64 md:h-80 object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black via-black/90 to-transparent z-20">
+                        <div class="inline-block px-2 py-1 bg-brand text-darker text-xs font-bold rounded mb-2 uppercase tracking-wider">Alto Padrão</div>
+                        <h4 class="font-bold text-lg">Luminotécnica Avançada</h4>
+                        <p class="text-sm text-gray-300">Projeto de iluminação sob medida para valorização de ambientes de luxo.</p>
+                    </div>
+                </div>
+                </div>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div class="rounded-xl overflow-hidden border border-gray-800 bg-black relative group">
-                    <video src="/static/img/v3.mp4" autoplay loop muted playsinline class="w-full h-64 md:h-80 object-cover"></video>
+                    <video src="/static/img/v3.mp4" autoplay loop muted playsinline class="w-full h-64 object-cover"></video>
                     <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black to-transparent z-20">
                         <p class="font-bold">Infraestrutura Predial</p>
                     </div>
                 </div>
 
                 <div class="rounded-xl overflow-hidden border border-gray-800 bg-black relative group">
-                    <video src="/static/img/v4.mp4" autoplay loop muted playsinline class="w-full h-64 md:h-80 object-cover"></video>
+                    <video src="/static/img/v4.mp4" autoplay loop muted playsinline class="w-full h-64 object-cover"></video>
                     <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black to-transparent z-20">
                         <p class="font-bold">Montagem QDC</p>
                     </div>
                 </div>
 
                 <div class="rounded-xl overflow-hidden border border-gray-800 bg-black relative group">
-                    <video src="/static/img/v5.mp4" autoplay loop muted playsinline class="w-full h-64 md:h-80 object-cover"></video>
+                    <video src="/static/img/v5.mp4" autoplay loop muted playsinline class="w-full h-64 object-cover"></video>
                     <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black to-transparent z-20">
-                        <p class="font-bold text-sm md:text-base">Perfil de LED - PLANETA ATLÂNTIDA 2025</p>
+                        <p class="font-bold text-sm">Perfil de LED - PLANETA ATLÂNTIDA 2025</p>
                     </div>
                 </div>
                 
                 <div class="rounded-xl overflow-hidden border border-gray-800 bg-black relative group">
-                    <video src="/static/img/v8.mp4" autoplay loop muted playsinline class="w-full h-64 md:h-80 object-cover"></video>
-                    <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black to-transparent z-20">
-                        <h4 class="font-bold">Correção de Barramento</h4>
-                    </div>
-                </div>
-                
-                <div class="rounded-xl overflow-hidden border border-gray-800 bg-black relative group">
-                    <video src="/static/img/v9.mp4" autoplay loop muted playsinline class="w-full h-64 md:h-80 object-cover"></video>
-                    <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black to-transparent z-20">
-                        <h4 class="font-bold">Elétrica de QUALIDADE</h4>
-                    </div>
-                </div>
-                
-                <div class="rounded-xl overflow-hidden border border-gray-800 bg-black relative group">
-                    <video src="/static/img/v10.mp4" autoplay loop muted playsinline class="w-full h-64 md:h-80 object-cover"></video>
-                    <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black to-transparent z-20">
-                        <h4 class="font-bold">Quadra de vôlei finalizada</h4>
-                    </div>
-                </div>
-
-                <div class="rounded-xl overflow-hidden border border-gray-800 bg-black relative group">
-                    <video src="/static/img/v11.mp4" autoplay loop muted playsinline class="w-full h-64 md:h-80 object-cover"></video>
+                    <video src="/static/img/v11.mp4" autoplay loop muted playsinline class="w-full h-64 object-cover"></video>
                     <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black via-black/80 to-transparent z-20">
                         <h4 class="font-bold text-brand">Rigor Técnico</h4>
                         <p class="text-xs text-gray-300">Ligação de tomadas segundo normas de segurança.</p>
@@ -219,18 +274,18 @@
                 </div>
                 
                 <div class="rounded-xl overflow-hidden border border-gray-800 bg-black relative group">
-                    <video src="/static/img/v12.mp4" autoplay loop muted playsinline class="w-full h-64 md:h-80 object-cover"></video>
+                    <video src="/static/img/v12.mp4" autoplay loop muted playsinline class="w-full h-64 object-cover"></video>
                     <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black via-black/80 to-transparent z-20">
                         <h4 class="font-bold text-brand">Infra Estruturada</h4>
-                        <p class="text-xs text-gray-300">Cablagem invisível e organizada em teto falso.</p>
+                        <p class="text-xs text-gray-300">Cablagem invisível em teto falso.</p>
                     </div>
                 </div>
                 
                 <div class="rounded-xl overflow-hidden border border-gray-800 bg-black relative group">
-                    <video src="/static/img/v13.mp4" autoplay loop muted playsinline class="w-full h-64 md:h-80 object-cover"></video>
+                    <video src="/static/img/v13.mp4" autoplay loop muted playsinline class="w-full h-64 object-cover"></video>
                     <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black via-black/80 to-transparent z-20">
-                        <h4 class="font-bold text-brand">Luminotécnica</h4>
-                        <p class="text-xs text-gray-300">Teste de focos embutidos para design impecável.</p>
+                        <h4 class="font-bold text-brand">Projeto Luminotécnico</h4>
+                        <p class="text-xs text-gray-300">Teste de focos embutidos.</p>
                     </div>
                 </div>
             </div>
@@ -239,43 +294,29 @@
 
     <section id="equipamentos" class="py-16 md:py-24 bg-darker border-t border-b border-gray-900 relative">
         <div class="absolute inset-0 bg-black/40"></div>
-        
         <div class="max-w-7xl mx-auto px-4 relative z-10">
             <div class="flex flex-col items-center justify-center mb-12 md:mb-16 text-center">
                 <div class="inline-block px-4 py-1 rounded-full bg-gray-800 border border-gray-700 text-gray-300 text-xs md:text-sm font-semibold mb-6 flex items-center gap-2">
-                    <i class="fas fa-toolbox text-brand"></i> Ferramental de Ponta
+                    <i class="fas fa-toolbox text-brand"></i> Ferramental Próprio
                 </div>
                 <h2 class="text-3xl md:text-5xl font-bold">Meus <span class="text-brand">Equipamentos</span></h2>
-                <p class="text-sm md:text-lg text-gray-400 mt-6 max-w-2xl px-2">
-                    Um serviço de alta performance exige ferramentas de precisão. Conheça a estrutura que garante segurança e acabamento impecável em cada obra.
-                </p>
             </div>
-
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-6">
-                <div class="aspect-square rounded-xl overflow-hidden border border-gray-800 bg-black relative group shadow-lg">
-                    <img src="/static/img/img5.jpeg" alt="Equipamento 1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                </div>
-                
-                <div class="aspect-square rounded-xl overflow-hidden border border-gray-800 bg-black relative group shadow-lg">
-                    <img src="/static/img/img6.jpeg" alt="Equipamento 2" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                </div>
-
-                <div class="aspect-square rounded-xl overflow-hidden border border-gray-800 bg-black relative group shadow-lg">
-                    <img src="/static/img/img7.jpeg" alt="Equipamento 3" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-6 max-w-4xl mx-auto">
+                <div class="aspect-square rounded-xl overflow-hidden border border-gray-800 bg-black shadow-lg"><img src="/static/img/img5.jpeg" class="w-full h-full object-cover"></div>
+                <div class="aspect-square rounded-xl overflow-hidden border border-gray-800 bg-black shadow-lg"><img src="/static/img/img6.jpeg" class="w-full h-full object-cover"></div>
+                <div class="aspect-square rounded-xl overflow-hidden border border-gray-800 bg-black shadow-lg"><img src="/static/img/img7.jpeg" class="w-full h-full object-cover"></div>
             </div>
         </div>
     </section>
 
     <section id="contato" class="py-16 md:py-24 relative bg-dark overflow-hidden">
         <div class="absolute inset-0 opacity-5 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-brand via-dark to-darker"></div>
-        
         <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
-            <i class="fas fa-bolt text-5xl md:text-6xl text-brand mb-6 animate-pulse"></i>
-            <h2 class="text-3xl md:text-5xl font-bold mb-6 md:mb-8 leading-tight">Vamos dar um <br class="md:hidden"><span class="text-brand">Choque de Qualidade</span> no seu projeto?</h2>
-            <p class="text-lg md:text-xl text-gray-400 mb-8 md:mb-10 px-4">Converse direto comigo agora. Sem intermediários, apenas soluções técnicas diretas.</p>
+            <i class="fas fa-handshake text-5xl md:text-6xl text-brand mb-6 animate-pulse"></i>
+            <h2 class="text-3xl md:text-5xl font-bold mb-6 md:mb-8 leading-tight">Disponível para <br class="md:hidden"><span class="text-brand">Novos Desafios</span></h2>
+            <p class="text-lg md:text-xl text-gray-400 mb-8 md:mb-10 px-4">Interessado no meu perfil profissional? Vamos conversar sobre como minha experiência pode agregar à sua empresa ou projeto.</p>
             <a href="https://wa.me/555199216089" target="_blank" class="neon-pulse w-full md:w-auto inline-flex items-center justify-center px-8 md:px-10 py-4 md:py-5 text-lg md:text-xl font-bold rounded-full text-darker bg-brand hover:scale-105 transition-all">
-                <i class="fab fa-whatsapp text-2xl md:text-3xl mr-3"></i> Falar com Fernando Agora
+                <i class="fab fa-whatsapp text-2xl md:text-3xl mr-3"></i> Falar com Fernando
             </a>
         </div>
     </section>
@@ -285,11 +326,9 @@
     </footer>
 
     <script>
-        // Lógica do Slideshow (Troca a cada 2 segundos)
         document.addEventListener('DOMContentLoaded', () => {
             const slides = document.querySelectorAll('#hero-slideshow .slide');
             let currentSlide = 0;
-
             if(slides.length > 0) {
                 setInterval(() => {
                     slides[currentSlide].classList.remove('active');
@@ -298,13 +337,11 @@
                 }, 2000); 
             }
 
-            // Lógica do Menu Mobile
             const btn = document.getElementById('mobile-menu-btn');
             const menu = document.getElementById('mobile-menu');
             const icon = btn.querySelector('i');
             const mobileLinks = document.querySelectorAll('.mobile-link');
 
-            // Abrir/Fechar ao clicar no ícone do menu
             btn.addEventListener('click', () => {
                 menu.classList.toggle('hidden');
                 if (menu.classList.contains('hidden')) {
@@ -316,7 +353,6 @@
                 }
             });
 
-            // Fechar menu automaticamente ao clicar num link (no telemóvel)
             mobileLinks.forEach(link => {
                 link.addEventListener('click', () => {
                     menu.classList.add('hidden');
@@ -325,134 +361,90 @@
                 });
             });
         });
-		
-		// ==========================================
-            // EFEITO INTERATIVO: MALHA ELÉTRICA (CANVAS)
-            // ==========================================
-            const canvas = document.getElementById('circuit-board');
-            if (canvas) {
-                const ctx = canvas.getContext('2d');
-                let width, height;
-                let particles = [];
-                
-                // Posição do mouse
-                let mouse = { x: null, y: null, radius: 150 };
+        
+        const canvas = document.getElementById('circuit-board');
+        if (canvas) {
+            const ctx = canvas.getContext('2d');
+            let width, height;
+            let particles = [];
+            let mouse = { x: null, y: null, radius: 150 };
 
-                // Captura o movimento do mouse
-                window.addEventListener('mousemove', function(event) {
-                    mouse.x = event.x;
-                    mouse.y = event.y;
-                });
+            window.addEventListener('mousemove', function(event) {
+                mouse.x = event.x;
+                mouse.y = event.y;
+            });
+            window.addEventListener('mouseout', function() {
+                mouse.x = undefined;
+                mouse.y = undefined;
+            });
 
-                // Tira o mouse quando ele sai da tela
-                window.addEventListener('mouseout', function() {
-                    mouse.x = undefined;
-                    mouse.y = undefined;
-                });
-
-                // Ajusta o tamanho do canvas
-                function resize() {
-                    width = canvas.width = window.innerWidth;
-                    // Limita a altura do canvas à primeira seção (Hero)
-                    const heroSection = canvas.closest('section');
-                    height = canvas.height = heroSection ? heroSection.offsetHeight : window.innerHeight;
-                }
-                window.addEventListener('resize', resize);
-                resize();
-
-                // Classe das Partículas (Nós de energia)
-                class Particle {
-                    constructor(x, y, directionX, directionY, size, color) {
-                        this.x = x;
-                        this.y = y;
-                        this.directionX = directionX;
-                        this.directionY = directionY;
-                        this.size = size;
-                        this.color = color;
-                    }
-                    // Desenha o nó
-                    draw() {
-                        ctx.beginPath();
-                        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
-                        ctx.fillStyle = '#FDE047'; // Amarelo marca
-                        ctx.fill();
-                    }
-                    // Move o nó e verifica colisão com as bordas
-                    update() {
-                        if (this.x > width || this.x < 0) this.directionX = -this.directionX;
-                        if (this.y > height || this.y < 0) this.directionY = -this.directionY;
-                        this.x += this.directionX;
-                        this.y += this.directionY;
-                        this.draw();
-                    }
-                }
-
-                // Cria a rede de partículas
-                function init() {
-                    particles = [];
-                    // Quantidade de conexões (ajuste se ficar muito pesado ou muito vazio)
-                    let numberOfParticles = (width * height) / 12000;
-                    for (let i = 0; i < numberOfParticles; i++) {
-                        let size = (Math.random() * 2) + 1;
-                        let x = (Math.random() * ((innerWidth - size * 2) - (size * 2)) + size * 2);
-                        let y = (Math.random() * ((innerHeight - size * 2) - (size * 2)) + size * 2);
-                        let directionX = (Math.random() * 2) - 1;
-                        let directionY = (Math.random() * 2) - 1;
-                        let color = '#FDE047';
-                        particles.push(new Particle(x, y, directionX, directionY, size, color));
-                    }
-                }
-
-                // Conecta os nós com "cabos" de energia
-                function connect() {
-                    let opacityValue = 1;
-                    for (let a = 0; a < particles.length; a++) {
-                        for (let b = a; b < particles.length; b++) {
-                            let distance = ((particles[a].x - particles[b].x) * (particles[a].x - particles[b].x)) + 
-                                           ((particles[a].y - particles[b].y) * (particles[a].y - particles[b].y));
-                            
-                            // Se estiverem próximos, cria a conexão básica
-                            if (distance < (width/7) * (height/7)) {
-                                opacityValue = 1 - (distance / 10000);
-                                ctx.strokeStyle = 'rgba(253, 224, 71,' + opacityValue + ')';
-                                ctx.lineWidth = 1;
-                                ctx.beginPath();
-                                ctx.moveTo(particles[a].x, particles[a].y);
-                                ctx.lineTo(particles[b].x, particles[b].y);
-                                ctx.stroke();
-                            }
-                        }
-                        
-                        // Interação especial com o MOUSE (Arco Elétrico)
-                        if (mouse.x && mouse.y) {
-                            let dx = mouse.x - particles[a].x;
-                            let dy = mouse.y - particles[a].y;
-                            let mouseDistance = Math.sqrt(dx * dx + dy * dy);
-                            if (mouseDistance < mouse.radius) {
-                                ctx.strokeStyle = 'rgba(253, 224, 71,' + (1 - mouseDistance/mouse.radius) + ')';
-                                ctx.lineWidth = 2; // Cabo mais grosso ligando ao mouse
-                                ctx.beginPath();
-                                ctx.moveTo(particles[a].x, particles[a].y);
-                                ctx.lineTo(mouse.x, mouse.y);
-                                ctx.stroke();
-                            }
-                        }
-                    }
-                }
-
-                // Loop de animação
-                function animate() {
-                    requestAnimationFrame(animate);
-                    ctx.clearRect(0, 0, width, height);
-                    for (let i = 0; i < particles.length; i++) {
-                        particles[i].update();
-                    }
-                    connect();
-                }
-
-                init();
-                animate();
+            function resize() {
+                width = canvas.width = window.innerWidth;
+                const heroSection = canvas.closest('section');
+                height = canvas.height = heroSection ? heroSection.offsetHeight : window.innerHeight;
             }
+            window.addEventListener('resize', resize);
+            resize();
+
+            class Particle {
+                constructor(x, y, directionX, directionY, size, color) {
+                    this.x = x; this.y = y; this.directionX = directionX; this.directionY = directionY; this.size = size; this.color = color;
+                }
+                draw() {
+                    ctx.beginPath(); ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false); ctx.fillStyle = '#FDE047'; ctx.fill();
+                }
+                update() {
+                    if (this.x > width || this.x < 0) this.directionX = -this.directionX;
+                    if (this.y > height || this.y < 0) this.directionY = -this.directionY;
+                    this.x += this.directionX; this.y += this.directionY; this.draw();
+                }
+            }
+
+            function init() {
+                particles = [];
+                let numberOfParticles = (width * height) / 12000;
+                for (let i = 0; i < numberOfParticles; i++) {
+                    let size = (Math.random() * 2) + 1;
+                    let x = (Math.random() * ((innerWidth - size * 2) - (size * 2)) + size * 2);
+                    let y = (Math.random() * ((innerHeight - size * 2) - (size * 2)) + size * 2);
+                    let directionX = (Math.random() * 2) - 1;
+                    let directionY = (Math.random() * 2) - 1;
+                    particles.push(new Particle(x, y, directionX, directionY, size, '#FDE047'));
+                }
+            }
+
+            function connect() {
+                for (let a = 0; a < particles.length; a++) {
+                    for (let b = a; b < particles.length; b++) {
+                        let distance = ((particles[a].x - particles[b].x) * (particles[a].x - particles[b].x)) + 
+                                       ((particles[a].y - particles[b].y) * (particles[a].y - particles[b].y));
+                        if (distance < (width/7) * (height/7)) {
+                            let opacityValue = 1 - (distance / 10000);
+                            ctx.strokeStyle = 'rgba(253, 224, 71,' + opacityValue + ')';
+                            ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(particles[a].x, particles[a].y); ctx.lineTo(particles[b].x, particles[b].y); ctx.stroke();
+                        }
+                    }
+                    if (mouse.x && mouse.y) {
+                        let dx = mouse.x - particles[a].x;
+                        let dy = mouse.y - particles[a].y;
+                        let mouseDistance = Math.sqrt(dx * dx + dy * dy);
+                        if (mouseDistance < mouse.radius) {
+                            ctx.strokeStyle = 'rgba(253, 224, 71,' + (1 - mouseDistance/mouse.radius) + ')';
+                            ctx.lineWidth = 2; ctx.beginPath(); ctx.moveTo(particles[a].x, particles[a].y); ctx.lineTo(mouse.x, mouse.y); ctx.stroke();
+                        }
+                    }
+                }
+            }
+
+            function animate() {
+                requestAnimationFrame(animate);
+                ctx.clearRect(0, 0, width, height);
+                for (let i = 0; i < particles.length; i++) { particles[i].update(); }
+                connect();
+            }
+
+            init(); animate();
+        }
     </script>
 </body>
 </html>
